@@ -1,0 +1,13 @@
+<section class="hero">
+  <div class="hero-inner">
+    <h1>{{ product.title }}</h1>
+    <p>{{ product.description | strip_html | truncate: 120 }}</p>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": []
+}
+{% endschema %}
