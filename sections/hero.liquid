@@ -1,7 +1,13 @@
 <section class="hero">
-  <div class="hero-inner">
+  <video autoplay muted playsinline id="heroVideo" class="hero-video">
+    <source src="{{ 'hero.mp4' | asset_url }}" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
     <h1>Welcome to {{ shop.name }}</h1>
-    <p>Premium sound. Engineered design. Built different.</p>
+    <p>Premium sound. Engineered design.</p>
     <a href="/collections/all" class="hero-button">Shop Now</a>
   </div>
 </section>
@@ -11,9 +17,7 @@
   "name": "Hero",
   "settings": [],
   "presets": [
-    {
-      "name": "Hero"
-    }
+    { "name": "Hero" }
   ]
 }
 {% endschema %}
