@@ -17,3 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("scroll", handleScroll);
 });
+
+document.addEventListener("mousemove", function(e) {
+  const video = document.getElementById("heroVideo");
+  if (!video) return;
+
+  const x = (window.innerWidth / 2 - e.clientX) / 100;
+  const y = (window.innerHeight / 2 - e.clientY) / 100;
+
+  video.style.transform += ` rotateX(${y}deg) rotateY(${x}deg)`;
+});
