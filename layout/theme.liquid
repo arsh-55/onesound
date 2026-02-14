@@ -14,6 +14,10 @@
 {{ 'base.css' | asset_url | stylesheet_tag }}
 
 <body>
+<div id="loader">
+  <div class="loader-circle"></div>
+</div>
+
 {% render 'header' %}
   {{ content_for_layout }}
 {{ 'theme.js' | asset_url | script_tag }}
