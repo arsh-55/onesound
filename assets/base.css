@@ -26,6 +26,8 @@ body {
   left: 0;
   z-index: 0;
   opacity: 0.9;
+  transition: transform 0.1s linear;
+  transform-origin: center;
 }
 
 .hero-overlay {
