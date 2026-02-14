@@ -1,13 +1,19 @@
 <section class="hero">
   <div class="hero-inner">
-    <h1>{{ product.title }}</h1>
-    <p>{{ product.description | strip_html | truncate: 120 }}</p>
+    <h1>Welcome to {{ shop.name }}</h1>
+    <p>Premium sound. Engineered design. Built different.</p>
+    <a href="/collections/all" class="hero-button">Shop Now</a>
   </div>
 </section>
 
 {% schema %}
 {
   "name": "Hero",
-  "settings": []
+  "settings": [],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
 }
 {% endschema %}
