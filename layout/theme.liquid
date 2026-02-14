@@ -14,7 +14,7 @@
 {{ 'base.css' | asset_url | stylesheet_tag }}
 
 <body>
-
+{% render 'header' %}
   {{ content_for_layout }}
 {{ 'theme.js' | asset_url | script_tag }}
 
